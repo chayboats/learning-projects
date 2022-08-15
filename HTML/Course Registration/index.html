@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Registration</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Course Registration</h1>
+    <p><em>Please fill out all required information in this form.</em></p>
+  </header>
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label>First Name <input type="text" required /></label>
+      <label>Last Name <input type="text" required /></label>
+      <label>Email <input type="email" required /></label>
+      <label>Phone Number <input type="text" placeholder="(XXX) XXX - XXX" required /></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course Location Preference</legend>
+      <label><input class="inline" type="radio" name="campus-online">On Campus</label>
+      <label><input class="inline" type="radio" name="campus-online">Online</label>
+      <label><input class="inline" type="checkbox">I have read and accept the
+        <a target="_blank"
+          href="https://www.termsfeed.com/public/uploads/2018/09/guardian-terms-conditions-use-intro-screenshot.jpg">
+          Terms and Conditions</a>.
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course List</legend>
+      <label>Upload your Curriculum Course list. <input type="file"></label>
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+
+</html>

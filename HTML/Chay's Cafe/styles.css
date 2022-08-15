@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'everything_calligraphyregular';
+  src: url('Fonts/Everything\ Font/everythingcalligraphy-pky6m-webfont.woff2') format('woff2'),
+       url('Fonts/Everything\ Font//everythingcalligraphy-pky6m-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'champagne__limousinesbold';
+  src: url('Fonts/Champagne/champagneandlimousinesbold-myr2-webfont.woff2') format('woff2'),
+       url('Fonts/Champagne/champagneandlimousinesbold-myr2-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'champagne__limousinesregular';
+  src: url('Fonts/Champagne/champagneandlimousines-7krb-webfont.woff2') format('woff2'),
+       url('Fonts/Champagne/champagneandlimousines-7krb-webfont.woff') format('woff');
+}
+
+@media only screen and (max-width: 900px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    width: 305px;
+    margin: auto;
+  }
+  h2 {
+    text-align: center;
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+body {
+  background-color: black;
+  background-position: center;
+  background-image: url(Images/s-o-c-i-a-l-c-u-t-zFoRwZirFvY-unsplash.jpg);
+  background-repeat: no-repeat;
+
+}
+
+.menu {
+  background-color: rgba(255, 255, 255, 0.879);
+  margin: 5% 10% 10%;
+  padding: 20px 60px;
+  max-width: 80%;
+}
+main {
+  background-position: center;
+
+}
+
+header, footer {
+  text-align: center;
+}
+
+h1 { 
+  font-family: everything_calligraphyregular;
+  font-size: 60px;
+  padding-bottom: 0px;
+}
+
+p {
+  font-family: champagne__limousinesregular;
+}
+
+h2 {
+  font-family: champagne__limousinesbold;
+}
+
+header p {
+  margin-top: -60px;
+}
+
+.food-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.food-group .item-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer {
+  font-size: 12px;
+}

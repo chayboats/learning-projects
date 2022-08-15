@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+.canvas {
+  width: 400px;
+  background-color: white;
+  padding: 10px;
+  margin: 10% auto;
+}
+.inner-canvas {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.divider {
+  background-color: black;
+  margin: 5px 5px 0;
+  clear: right;
+  border-bottom: 1px solid black;
+}
+
+.md {
+  padding: 4px;
+}
+
+.lg {
+  padding: 8px;
+}
+
+h2, p {
+  margin: 0 5px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: .8px;
+  margin: -8px 5px;
+}
+
+.right {
+  float: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.indent-one {
+  margin-left: 2em;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.indent-two {
+  margin-left: 4em;
+}
+
+footer p {
+  font-size: 10px;
+  text-align: justify;
+  margin: 1em 5px;
+}
+
+main p {
+  border-bottom: 1px solid black;
+}
+
+.no-border {
+  border-bottom: 0;
+  margin-bottom: -3px;
+}

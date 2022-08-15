@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'nugo_sanslight';
+  src: url('Fonts/webfontkit-20220630-140613/nugosanslight-9yzok-webfont.woff2') format('woff2'),
+       url('Fonts/webfontkit-20220630-140613/nugosanslight-9yzok-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'mornthin';
+  src: url('Fonts/Morn/mornthin-0wll9-webfont.woff2') format('woff2'),
+       url('Fonts/Morn/mornthin-0wll9-webfont.woff') format('woff');
+}
+
+@media only screen and (max-width: 900px) {
+  .middle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+header { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom-width: 0.5px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  color: rgb(137, 105, 226);
+  font-family: Arial;
+  
+}
+
+h1 { 
+  font-family: nugo_sanslight;
+}
+.sign {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 180px;
+  margin-right: 10px;
+}
+.logo {
+  margin-top: -14px;
+}
+
+#sign-up {
+  background-color: rgb(239, 136, 111);
+  color: white;
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px 10px;
+}
+.top {
+  background-image: url(krzysztof-kowalik-PkXThkFaGzo-unsplash.jpg);
+  background-position: center;
+  height: 500px;
+  font-family: mornthin;
+  color: white;
+}
+.top h2 { 
+  font-size: 50px;
+}
+
+.definition {
+  width: 80%;
+  padding: 10% 10%;
+}
+
+#learn-more-button {
+  width: 80px;
+  height: 20px;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 5px;
+  border-style: solid;
+  padding-left: 14px;
+  padding-top: 4px;
+  font-size: 12px;
+}
+
+.middle {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: mornthin;
+  background: linear-gradient(90deg, rgb(255, 169, 147), rgb(239, 136, 111), rgb(225, 124, 98));
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.232);
+  color: white;
+  margin: -29px auto;
+  padding: 2px 10px;
+}
+#want-to {
+  padding-right: 20px;
+}

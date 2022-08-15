@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Birthday Girl Knowledge Quiz" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>How Well Do You Know the Birthday Girl?</h1>
+    <nav>
+      <ul>
+        <li><a href="#your-info">Your Info</a></li>
+        <li><a href="#her-info">Info</a></li>
+        <li><a href="#her-faves">Faves</a></li>
+        <li><a href="#her-personality">Personality</a></li>
+        <li><a href="#her-true-false-questions">True/False</a></li>
+        <li><a href="#message-to-her">Message to Her</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form method="post" href="https://freecodecamp.org/practice-project/accessibility-quiz">
+      <div class="personal-info">
+        <h2 id="your-info">Your Info</h2>
+        <section role="region" aria-labelledby="your-info">
+          <label for="your-name">Name</label>
+          <input name="name" id="your-name" type="text" />
+
+          <label for="email">Email</label>
+          <input name="email" id="email" type="email" />
+
+          <label for="relationship">Relationship to Birthday Girl</label>
+          <input name="relationship" id="relationship" type="text" />
+        </section>
+      </div>
+
+      <div class="birthday-quiz">
+        <h2 id="birthday-quiz">Birthday Quiz</h2>
+
+        <section class="her-info" role="region" aria-labelledby="her-info">
+          <h3 id="her-info">Her Info</h3>
+          <label for="her-name">Full Name</label>
+          <input name="name" id="her-name" type="text" />
+
+          <label for="DOB">D.O.B
+            <span class="sr-only">(Date of Birth)</span>
+          </label>
+          <input name="dob" id="dob" type="date" />
+
+          <label for="sibling-count">Number of Siblings</label>
+          <input name="sibling-count" id="sibling-count" type="number" min="0" />
+
+          <label for="pet-count">Number of Pets</label>
+          <input name="pet-count" id="pet-count" type="number" min="0" />
+        </section>
+
+        <section class="her-faves-section" role="region" aria-labelledby="her-faves">
+          <h3 id="her-faves-header">Her Faves</h3>
+          <fieldset>
+            <legend>Color</legend>
+            <input name="color" id="pink" type="radio" />
+            <label for="pink">Pink</label>
+
+            <input name="color" id="blue" type="radio" />
+            <label for="blue">Blue</label>
+
+            <input name="color" id="purple" type="radio" />
+            <label for="purple">Purple</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Food</legend>
+            <input name="food" id="spicy-chicken-sandwich" type="radio" />
+            <label for="spicy-chicken-sandwich">Spicy Chicken Sandwich</label>
+
+            <input name="food" id="chicken-parmesean" type="radio" />
+            <label for="chicken-parmesean">Chicken Parmesean</label>
+
+            <input name="food" id="beef-stew" type="radio" />
+            <label for="beef-stew">Beef Stew</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dessert</legend>
+            <input name="dessert" id="cake" type="radio" />
+            <label for="cake">Cake</label>
+
+            <input name="dessert" id="cookie" type="radio" />
+            <label for="cookie">Cookie</label>
+            
+            <input name="dessert" id="ice-cream" type="radio" />
+            <label for="ice-cream">Ice Cream</label>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Drink</legend>
+            <input name="drink" id="bubly" type="radio" />
+            <label for="bubly">Bubly</label>
+            
+            <input name="drink" id="coke" type="radio" />
+            <label for="coke">Coke</label>
+           
+            <input name="drink" id="monster" type="radio" />
+            <label for="monster">Monster</label>
+          </fieldset>
+        </section>
+
+        <section role="region" aria-labelledby="her-personality">
+          <h3 id="her-personality">Her Personality</h3>
+          <fieldset>
+            <div class="row">
+              <div class="column">
+                <div class="row">
+                  <input name="cat-dog" id="cat" type="radio" />
+                  <label for="cat">Cat</label>
+                </div>
+
+                <div class="row">
+                  <input name="day-night" id="day" type="radio" />
+                  <label for="day">Day</label>
+                </div>
+
+                <div class="row">
+                  <input name="show-movie" id="show" type="radio" />
+                  <label for="show">Show</label>
+                </div>
+
+                <div class="row">
+                  <input name="in-out" id="stay-in" type="radio" />
+                  <label for="stay-in">Stay In</label>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="row">
+                  <input name="cat-dog" id="dog" type="radio" />
+                  <label for="dog">Dog</label>
+                </div>
+                
+                <div class="row">
+                  <input name="day-night" id="night" type="radio" />
+                  <label for="night">Night</label>
+                </div>
+                
+                <div class="row">
+                  <input name="show-movie" id="movie" type="radio" />
+                  <label for="movie">Movie</label>
+                </div>
+                
+                <div class="row">
+                  <input name="in-out" id="go-out" type="radio" />
+                  <label for="go-out">Go Out</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="true-info" role="region" aria-labelledby="her-true-false-questions">
+          <h3 id="her-true-false-questions">Her True/False Questions</h3>
+          <fieldset>
+            <ol>
+              <div class="column">
+                <li>Owns a pair of overalls</li>
+                <div class="row">
+                  <input name="true-false-1" id="true-1" type="radio" />
+                  <label for="true-1">True</label>
+                  
+                  <input name="true-false-1" id="false-1" type="radio" />
+                  <label for="false-1">False</label>
+                </div>
+              </div>
+
+              <div class="column">
+                <li>Has never driven a truck</li>
+                <div class="row">
+                  <input name="true-false-2" id="true-2" type="radio" />
+                  <label for="true-2">True</label>
+                  
+                  <input name="true-false-2" id="false-2" type="radio" />
+                  <label for="false-2">False</label>
+                </div>
+              </div>
+
+              <div class="column">
+                <li>No longer bites nails</li>
+                <div class="row">
+                  <input name="true-false-3" id="true-3" type="radio" />
+                  <label for="true-3">True</label>
+                  
+                  <input name="true-false-3" id="false-3" type="radio" />
+                  <label for="false-3">False</label>
+                </div>
+              </div>
+
+              <div class="column">
+                <li>Has a real plant inside her home</li>
+                <div class="row">
+                  <input name="true-false-4" id="true-4" type="radio" />
+                  <label for="true-4">True</label>
+                 
+                  <input name="true-false-4" id="false-4" type="radio" />
+                  <label for="false-4">False</label>
+                </div>
+              </div>
+            </ol>
+          </fieldset>
+        </section>
+
+        <section role="region" aria-labelledby="message-to-her">
+          <h3 id="message-to-her">Message to the Birthday Girl</h3>
+          <textarea id="birthday-message" rows="5"></textarea>
+        </section>
+      </div>
+
+      <div class="done">
+
+        <input name="results" id="result" type="checkbox" />
+        <label for="result">I'd like to receive an email of my results.</label>
+        <button name="submit" type=submit id="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

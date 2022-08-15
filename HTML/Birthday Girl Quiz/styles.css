@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: auto;
+}
+
+header {
+  padding: 3px 0;
+}
+header, a {
+  background-color: #5F024F;
+  color: #FFFAD6;
+}
+
+main {
+  padding: 15px 200px;
+  font-size: 18px;
+}
+
+h1, h2, ul {
+  text-align: center;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 3%;
+}
+
+.personal-info input, .her-info input {
+  display: block;
+  height: 30px;
+  margin: 3px 0 10px 0;
+  border: solid black 1px;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.true-info .row {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 25px;
+  width: 150px;
+}
+
+textarea {
+border: solid black 1px;
+width: 100%;
+}
+
+.done {
+  padding: 30px 0 20px;
+}
+
+button {
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 10px 0;
+  width: 100%;
+}
+ol {
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  
+}
+
