@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop's Poboys Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Customer Satisfaction Survey</h1>
+      <p id="description">
+        Thank you for taking the time to complete this survey. We appreciate and value your feedback.
+      </p>
+    </header>
+
+    <form action="https://register-demo.freecodecamp.org" id="survey-form">
+      <fieldset class="personal-info">
+        <label id="name-label">Name
+          <input 
+            id="name" 
+            type="text" required=""
+            placeholder="Enter your name"
+          />
+        </label>
+
+        <label id="email-label">Email
+          <input 
+            id="email"
+            type="email" required="" 
+            placeholder="Enter your email" 
+          />
+        </label>
+
+        <label id="phone-number-label">Phone Number
+          <input 
+            id="phone-number"
+            type="text" required=""
+            placeholder="(***)***-***"  
+          />
+        </label>
+
+        <label id="number-label">Age 
+          <input 
+            id="number"
+            type="number" required=""
+            placeholder="13 - 120"  
+            min="13" max="120"
+          />
+        </label>
+
+        <label id="day-label">Day of Visit
+          <select id="dropdown" required="">
+            <option value="">Select One</option>
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="5">Friday</option>
+            <option value="6">Saturday</option>
+          </select>
+        </label>
+        
+        <label id="type-label">Type of Visit
+          <select id="dropdown" required="">
+            <option value="">Select One</option>
+            <option value="1">Dine-In</option>
+            <option value="2">Carry-Out</option>
+          </select>
+        </label>
+      </fieldset>
+     
+      <fieldset>
+        <p>Please rate your satisfaction of the following:</p>
+        
+        <table>
+          <tr>
+            <th></th>
+            <th>Highly Satisfied</th>
+            <th>Satisfied</th>
+            <th>Unsatisfied</th>
+            <th>Not Observed</th>
+          </tr>
+        
+          <tr>
+            <td>Customer Service</td>
+              <td><input value="highly-satisfied" id="highly-satisfied" type="radio" name="service" /></td>
+              <td><input value="satisfied" id="satisfied" type="radio" name="service" /></td>
+              <td><input value="unsatisfied" id="unsatisfied" type="radio" name="service" /></td>
+              <td><input value="not-observed" id="not-observed" type="radio" name="service" /></td>
+          </tr>
+          
+          <tr>
+            <td>Cleanliness</td>
+              <td><input value="highly-satisfied" id="highly-satisfied" type="radio" name="cleanliness" /></td>
+              <td><input value="satisfied" id="satisfied" type="radio" name="cleanliness" /></td>
+              <td><input value="unsatisfied" id="unsatisfied" type="radio" name="cleanliness" /></td>
+              <td><input value="not-observed" id="not-observed" type="radio" name="cleanliness" /></td>
+          </tr>
+
+          <tr>
+            <td>Freshness</td>
+              <td><input value="highly-satisfied" id="highly-satisfied" type="radio" name="freshness" /></td>
+              <td><input value="satisfied" id="satisfied" type="radio" name="freshness" /></td>
+              <td><input value="unsatisfied" id="unsatisfied" type="radio" name="freshness" /></td>
+              <td><input value="not-observed" id="not-observed" type="radio" name="freshness" /></td>
+          </tr>
+
+          <tr>
+            <td>Overall Taste</td>
+              <td><input value="highly-satisfied" id="highly-satisfied" type="radio" name="overall-taste" /></td>
+              <td><input value="satisfied" id="satisfied" type="radio" name="overall-taste" /></td>
+              <td><input value="unsatisfied" id="unsatisfied" type="radio" name="overall-taste" /></td>
+              <td><input value="not-observed" id="not-observed" type="radio" name="overall-taste" /></td>
+          </tr>
+
+          <tr>
+            <td>Seating</td>
+              <td><input value="highly-satisfied" id="highly-satisfied" type="radio" name="seating" /></td>
+              <td><input value="satisfied" id="satisfied" type="radio" name="seating" /></td>
+              <td><input value="unsatisfied" id="unsatisfied" type="radio" name="seating" /></td>
+              <td><input value="not-observed" id="not-observed" type="radio" name="seating" /></td>
+          </tr>
+
+          <tr>
+            <td>Parking</td>
+              <td><input value="highly-satisfied" id="highly-satisfied" type="radio" name="parking" /></td>
+              <td><input value="satisfied" id="satisfied" type="radio" name="parking" /></td>
+              <td><input value="unsatisfied" id="unsatisfied" type="radio" name="parking" /></td>
+              <td><input value="not-observed" id="not-observed" type="radio" name="parking" /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        
+        <p>Would you reccommend Pop's Poboys to a friend?</p>
+        <div class="labels">
+          <label>
+            <input value="yes" id="yes" type="radio" name="yes-no" />Yes
+          </label>
+          <label>
+            <input value="no" id="no" type="radio" name="yes-no" />No
+            </label>
+          <label>
+            <input value="not-sure" id="not-sure" type="radio" name="yes-no" />Not Sure
+          </label>
+        </div>
+
+        <p>How did you hear about us?</p>
+        <div class="labels">
+          <label>
+            <input value="friends" id="friends" type="radio" name="advertising" />Family/Friend
+          </label>
+          <label>
+            <input value="media" id="media" type="radio" name="advertising" />Social Media
+          </label>
+          <label>
+            <input value="passed" id="passed" type="radio" name="advertising" />Passed By
+          </label>
+        </div>
+        
+        <p>Where would you like to see us pop up next?</p>
+        <div class="labels">
+          <label>
+            <input type="checkbox" value="breaux-bridge"/>
+            Breaux Bridge
+          </label>
+          <label>
+            <input type="checkbox" value="abbeville"/>
+            Abbeville
+          </label>
+          <label>
+            <input type="checkbox" value="duson"/>
+            Duson
+          </label>
+          <label>
+            <input type="checkbox" value="carencro"/>
+            Carencro
+          </label>
+          <label>
+            <input type="checkbox" value="youngsville"/>
+            Youngsville
+          </label>
+          <label>
+            <input type="checkbox" value="broussard"/>
+            Broussard
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <label class="comments">Comments
+          <textarea></textarea>
+        </label>
+
+        <div class="labels">
+          <label>
+            <input type="checkbox" value="policy" required="" />
+            I agree that I am at least 13 years old and have read and acknowledge Pop's Poboy's 
+            <a target="_blank" href="http://www.popspoboys.com/">Privacy Policy</a>
+          </label>
+         
+          <label>
+            <input type="checkbox" value="info" />
+            I agree to receive information and special offers from Pop's Poboys.
+            </label>
+        </div>
+      </fieldset>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
