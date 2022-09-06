@@ -1,0 +1,72 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(190, 78, 3);
+  color: white;
+  
+  font-size: 120%
+}
+
+main {
+  margin: auto;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+h1, p, h3, figcaption {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0
+}
+
+#main p {
+  margin: 5px auto 20px;
+}
+.white {
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 20px
+}
+
+img {
+  margin: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.caption {
+  color: green;
+  padding-top: 10px;
+}
+
+.timeline {
+  margin: auto;
+  max-width: 500px;
+}
+
+.italic {
+  font-style: italic;
+  
+}
+
+p:not(#more-info) {
+  font-size: 80%;
+}
+
+a:hover {
+  color: pink;
+}
+
+a:visited {
+  color: rgb(0, 9, 128);
+}
+
+#tribute-info {
+  background-color: rgb(240, 171, 134);
+  border-radius: 15px;
+  padding: 5px;
+  margin: 20px;
+  color: rgb(0, 9, 128);
+}
