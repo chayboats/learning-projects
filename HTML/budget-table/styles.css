@@ -15,3 +15,23 @@ h1 {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px)
 }
+
+.months {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 800px;
+}
+
+.month {
+  padding: 0.5rem 1rem;
+}
+
+caption {
+  font-size: 1.5rem;
+  color: rgb(46, 168, 95);
+  text-align: left;
+}
