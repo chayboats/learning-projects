@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -35,3 +39,13 @@ caption {
   color: rgb(46, 168, 95);
   text-align: left;
 }
+
+th {
+  text-align: left;
+}
+
+.description {
+  display: block;
+  font-weight: normal;
+}
+
