@@ -6,18 +6,20 @@ body {
   font-family: sans-serif;
 }
 
+main {
+  max-width: 700px;
+  margin: auto;
+  border: 2px solid  rgb(202, 202, 202);
+}
+
 h1 {
   display: flex;
-  flex-direction: column-reverse;
-
+  flex-direction: column-reverse; 
 }
+
 .subheader {
   font-size: 15px;
-}
-
-.sr-only {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px)
+  padding-top: 1rem;
 }
 
 .months {
@@ -27,11 +29,15 @@ h1 {
   text-align: right;
   display: flex;
   justify-content: flex-end;
-  max-width: 800px;
 }
 
 .month {
   padding: 0.5rem 1rem;
+}
+
+h1, section {
+  padding: 1rem;
+  margin: auto;
 }
 
 caption {
@@ -40,12 +46,35 @@ caption {
   text-align: left;
 }
 
+#expenses {
+  padding-top: .55rem;
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px)
+}
+
 th {
   text-align: left;
+  overflow: hidden;
 }
 
 .description {
   display: block;
   font-weight: normal;
+  font-style: italic;
+  background-color: white;
 }
 
+td {
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  background-image: linear-gradient(to bottom, rgb(216, 216, 216) 1.845rem, white 1.845rem);
+}
