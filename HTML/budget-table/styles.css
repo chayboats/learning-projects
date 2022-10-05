@@ -1,0 +1,78 @@
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 800px;
+  border: 1px solid rgb(227, 227, 227);
+  margin: auto;
+  padding: 1rem;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.subheader {
+  font-size: 1rem;
+}
+
+.months {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  text-align: right;
+  padding: .5rem;
+}
+
+.month {
+  width: 10rem;
+}
+caption {
+  text-align: left;
+  font-size: 1.5rem;
+  color: rgb(103, 196, 128);
+}
+
+.description {
+  font-weight: normal;
+  font-style: italic;
+  display: block;
+}
+
+.current {
+  font-style: italic;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+
+}
+
+th {
+  text-align: left;
+}
+
+table {
+  width: 100%;
+}
+
+.current  {
+  padding-right: 1.5rem;
+}
