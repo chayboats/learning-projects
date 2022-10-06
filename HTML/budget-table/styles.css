@@ -1,56 +1,64 @@
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  background-color: rgb(13, 72, 124);
 }
 
 main {
-  max-width: 800px;
-  border: 1px solid rgb(227, 227, 227);
-  margin: auto;
-  padding: 1rem;
+  max-width: 750px;
+  border: 3px solid rgb(227, 227, 227);
+  margin: 3rem auto;
+  background-color: white;
 }
 
 h1 {
   display: flex;
   flex-direction: column-reverse;
+  margin-left: 1rem;
 }
 
-.subheader {
+h1 span:first-of-type {
+  color: rgb(56, 151, 189);
   font-size: 1rem;
+  padding-top: .3rem
+}
+
+h1 span:last-of-type {
+  color: rgb(13, 72, 124);
 }
 
 .months {
-  background-color: black;
+  background-color: rgb(13, 72, 124);
   font-weight: bold;
   color: white;
   text-align: right;
-  padding: .5rem;
+  padding: .5rem 0;
 }
 
 .month {
-  width: 10rem;
+  text-align: right;
+  padding-right: 2rem;
 }
+
+table {
+  border-bottom: 5px double rgb(13, 72, 124);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-container {
+  margin: auto;
+  padding: 1rem;
+}
+
 caption {
   text-align: left;
   font-size: 1.5rem;
-  color: rgb(103, 196, 128);
+  color: rgb(56, 151, 189);
+  margin-top: .5rem;
 }
 
-.description {
-  font-weight: normal;
-  font-style: italic;
-  display: block;
-}
-
-.current {
-  font-style: italic;
-}
-
-.total {
-  font-weight: bold;
-}
-
-.sr-only {
+thead tr[class] {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
@@ -62,17 +70,48 @@ caption {
   position: absolute;
   padding: 0;
   margin: -1px;
+}
 
+tr.data {
+  background-image: linear-gradient(to bottom, rgb(212, 224, 230), 1.845rem, white 1.845rem);
 }
 
 th {
   text-align: left;
+  vertical-align: top;
+  padding-left: .5rem;
 }
 
-table {
-  width: 100%;
+th, td {
+  padding-top: .3rem;
 }
 
-.current  {
+.description {
+  font-weight: normal;
+  font-style: italic;
+  display: block;
+  padding: .75rem 0;
+}
+
+td {
+  text-align: right;
+  width: 5.5rem;
+  vertical-align: top; 
+}
+
+.current {
+  font-style: italic;
+}
+
+.current, tr td:nth-of-type(2) {
   padding-right: 1.5rem;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.total:hover {
+  background-color: black;
+  color: white;
 }
