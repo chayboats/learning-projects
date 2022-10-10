@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(236, 90, 146);
+}
+
+.piano {
+  background-color: black;
+  width: 900px;
+  height: 280px;
+  margin: auto;
+}
+
+#white-keys {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.white-key {
+  background-color: white;
+  width: calc(100%/15);
+  margin: 2px;
+}
+
+.black-key {
+  background-color: black;
+  height: 100%
+}
