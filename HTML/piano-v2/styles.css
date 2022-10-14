@@ -1,32 +1,45 @@
 body {
-  background-color: rgb(224, 135, 150);
+  background-color: rgb(58, 179, 220);
 }
 
 #piano {
   background-color: black;
-  height: 16rem;
-  width: 69.9rem;
+  width: 70rem;
+  height: 15.3rem;
   margin: auto;
-  padding-left: 0.08rem
+  padding-left: .08rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .key {
+  width: 3.13rem;
+  height: 15rem;
   background-color: ivory;
-  margin: 0.2rem 0.1rem;
-  width: 3.12rem;
-  height: 15.6rem;
   float: left;
+  margin: .1rem;
+  border-radius: 0 0 .28rem .28rem;
   position: relative;
-  border-radius: 0 0 .2rem .2rem;
 }
 
 .key.black::after {
   background-color: black;
-  height: 8.4rem;
-  width: 2.3rem;
-  border-radius: 0 0 .2rem .2rem;
-  position: absolute;
   content: "";
-  left: -1.3rem;
+  width: 2.3rem;
+  height: 9rem;
+  right: 2.1rem;
+  position: absolute;
+  border-radius: 0 0 .28rem .28rem;
 }
 
+@media (max-width: 75rem) {
+  #piano {
+    width: 46.7rem;
+  }
+}
+
+@media (max-width: 50rem){
+  #piano {
+    width: 23.35rem;
+  }
+}
