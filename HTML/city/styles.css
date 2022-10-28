@@ -8,7 +8,6 @@
 }
 
 * {
-  border: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -17,6 +16,15 @@ body {
   margin: 0;
   overflow: hidden;
   position: relative;
+  background: radial-gradient(
+    closest-corner circle at 15% 15%,
+    yellow 0%, 
+    yellow 30%,
+    transparent
+  ), 
+  linear-gradient(
+    yellow, orange, rgb(255, 48, 227)
+  )
 }
 .background-builings, .midground-buildings, .foreground-buildings {
   position: absolute;
@@ -141,7 +149,21 @@ body {
 .fb1 {
   width: 100px;
   height: 360px;
-  background-color: var(--building-color1);
+  background: 
+  repeating-linear-gradient(
+    var(--building-color1),
+    var(--building-color1) 5%,
+    transparent 5%,
+    transparent 10%
+  ),
+  
+  repeating-linear-gradient(
+    90deg, var(--building-color1),
+    var(--building-color1) 10%,
+    var(--window-color1) 10%,
+    var(--window-color1) 45%
+  )
+
 }
 
 .fb2 {
