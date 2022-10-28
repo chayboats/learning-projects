@@ -1,0 +1,136 @@
+:root {
+  --building-color1: red;
+  --building-color2: yellow;
+  --building-color3: blue;
+}
+
+* {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+.background-builings, .midground-buildings, .foreground-buildings {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.bb1 {
+  width: 90px;
+  height: 590px;
+}
+
+.bb1a {
+  width: 5px;
+  height: 35px;
+  background-color: black;
+  
+}
+
+.bb1b {
+  width: 70px;
+  height: 40px;
+  background-color: var(--building-color3);
+}
+
+.bb1c {
+  height: 100%;
+  background-color: var(--building-color3);
+  width: 100%;
+}
+
+.building-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bb2 {
+  width: 100px;
+  height: 510px;
+}
+
+.bb2a {
+  width: 100;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-top:  50px solid transparent; 
+  border-left: 50px solid var(--building-color1);
+  border-bottom: 50px solid var(--building-color1);
+}
+
+.bb2b {
+  background-color: var(--building-color1);
+  height: 100%;
+  width: 100%;
+}
+
+.bb3 {
+  width: 150px;
+  height: 670px;
+}
+
+.bb3a {
+  width: 5x;
+  height: 55px;
+  background-color: var(--building-color2);
+}
+
+.bb3b {
+  width: 70px;
+  height: 80px;
+  background-color: var(--building-color2);
+}
+
+.bb3c {
+  width: 120px;
+  height: 75px;
+  background-color: var(--building-color2);
+}
+
+.bb3d {
+  width: 100%;
+  height: 100%;
+  background-color: var(--building-color2);
+}
+
+
+.mb1 {
+  width: 170px;
+  height: 440px;
+  margin-left: 240px;
+  background-color: var(--building-color3);
+
+}
+
+.fb1 {
+  width: 100px;
+  height: 360px;
+  background-color: var(--building-color1);
+}
+
+.fb2 {
+  width: 110px;
+  height: 400px;
+  background-color: var(--building-color2);
+}
+
+.fb3 {
+  width: 110px;
+  height: 350px;
+  margin-right: 130px;
+  background-color: var(--building-color1);
+}
+
+
+
