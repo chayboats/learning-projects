@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a613df3a16.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Notes</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <nav id="navbar">
+        <header>
+          <h1 id="CSS Definitions">
+            <i class="fa-solid fa-book"></i>
+          </h1>
+        </header>
+        <ul>
+          <li><a class="nav-link" href="#A">A</a></li>
+          <li><a class="nav-link" href="#B">B</a></li>
+          <li><a class="nav-link" href="#C">C</a></li>
+          <li><a class="nav-link" href="#E">E</a></li>
+          <li><a class="nav-link" href="#F">F</a></li>
+          <li><a class="nav-link" href="#G">G</a></li>
+          <li><a class="nav-link" href="#H">H</a></li>
+          <li><a class="nav-link" href="#I">I</a></li>
+          <li><a class="nav-link" href="#M">M</a></li>
+          <li><a class="nav-link" href="#O">O</a></li>
+          <li><a class="nav-link" href="#P">P</a></li>
+          <li><a class="nav-link" href="#R">R</a></li>
+          <li><a class="nav-link" href="#S">S</a></li>
+          <li><a class="nav-link" href="#T">T</a></li>
+        </ul>
+      </nav>
+
+      <main id="main-doc">
+        <section id="A" class="main-section">
+          <header class="topic">A</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Alpha Channel</span>
+                <span>: (rgba) Similar to opacity.</span>
+              </p>
+
+              <ul>
+                <li class="italic">Ex: rgba(255, 255, 255, 50%)</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="B" class="main-section">
+          <header class="topic">B</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Block Elements</span>
+                <span
+                  >: Elements that stack when next to one another instead of
+                  being side by side.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">
+                  Div is a block element. (You can use display: inline-block to
+                  cancel this).
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">Box Shadow</span>
+                <span
+                  >: A property that places a shadow behind an element.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">
+                  Box-shadow: offsetX offsetY blurRadius spreadRadius color;
+                </li>
+                <li class="italic">Box-shadow: 5px 5px 5px 5px red;</li>
+                <li class="italic">
+                  BlurRadius is the value inside of the box shadow blurring the
+                  radius
+                </li>
+                <li class="italic">
+                  SpreadRadius spreads the radius out farther
+                </li>
+                <li class="italic">#px #px color</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="C" class="main-section">
+          <header class="topic">C</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Class Selector</span>
+                <span
+                  >: Located in the CSS files. Like a type selector, but it has
+                  a dot before the name. YOU MUST add this class to the HTML
+                  FILE!</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">
+                  <span>Ex in HTML:</span>
+                  <span><code>&ltdiv class=”menu”></code></span>
+                </li>
+
+                <li class="italic">
+                  <span>Ex in CSS:</span>
+                  <code>
+                    <div>.menu {</div>
+                    <div class="indent">background-color: blue;</div>
+                    <div>}</div>
+                  </code>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">Color Stop</span>
+                <span
+                  >: Adding a % to a color in the gradient makes it appear in
+                  the transition longer.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">
+                  Ex: (180deg, rgb(255, 0, 0) 0%, rgb(0, 255, 0,) 50% rgb(0, 0,
+                  255) 100%);
+                </li>
+
+                <p class="indent">
+                  <li class="italic">
+                    Purple is the automatic gradient direction and color stop,
+                    so these values do not need to be inputted.
+                  </li>
+                </p>
+              </ul>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">Complementary Colors</span>
+                <span
+                  >: Two colors that are opposite from each other on the color
+                  wheel.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">
+                  Two complementary colors mixed together create a gray.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">CSS</span>
+                <span
+                  >: Cascading Style Sheets, a language used to style HTML
+                  elements.</span
+                >
+              </p>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">CSS Linear-Gradient</span>
+                <span
+                  >: A function that lets you control the direction of the
+                  transition along a line, and which colors are used.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">
+                  linear-gradient(gradientDirection, color1, color2, ...);
+                </li>
+                <li class="italic">Creates an image element</li>
+                <li class="italic">
+                  Is usually paired with background property that accepts and
+                  image as a value
+                </li>
+                <li class="italic">
+                  To represent the colors, you can use any type of color key
+                  using hex, rgb, or hsl.
+                </li>
+                <li class="italic">
+                  <div>Ex:
+                    <code>.red {</div>
+                      <div class="double-indent">
+                    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0,
+                    255, 0));
+                    </div>
+                    <div class="indent">}</div>
+                  </code>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">CSS Selector</span>
+                <span
+                  >: The part of a CSS rule-set that defines which HTML elements
+                  will get the design.</span
+                >
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="E" class="main-section">
+          <header class="topic">E</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Element Selector</span>
+                <span
+                  >: Selecting all elements from the body to style in CSS.</span
+                >
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="F" class="main-section">
+          <header class="topic">F</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Fallback Font Value</span>
+                <span
+                  >: Adding another font with a comma after a font family (in
+                  case the first is not available)</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">
+                  Ex: In font-family: arial, georgia; (Georgia is the fallback
+                  font value)
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">Flexbox</span>
+                <span
+                  >: A display value that creates a container to position
+                  elements within the container.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">See Notes about Flexbox</li>
+              </ul>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">Function</span>
+                <span
+                  >: A piece of code that can take an input and perform a
+                  specific action.</span
+                >
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="G" class="main-section">
+          <header class="topic">G</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Global Values</span>
+                <span
+                  >: Values that can be used for many elements and classes in
+                  CSS.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">
+                  Ex: initial, inherit, unset, revert, revert-layer
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">Gradient</span>
+                <span>: Color Transition</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">Gradient Direction</span>
+                <span>: Degree that the gradient is going.</span>
+              </p>
+
+              <ul>
+                <li class="italic">Ex: 180deg</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="H" class="main-section">
+          <header class="topic">H</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Hex Values (Hexadecimal)</span>
+                <span
+                  >: Start with a # character and take six characters from 0-9
+                  and A-F. The first pair of characters represent red, the
+                  second pair represent green, and the third pair represent
+                  blue.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">#4B5320</li>
+
+                <li class="italic">
+                  <p class="definition">
+                    <span>Helpful Links: </span>
+                    <a href="https://imagecolorpicker.com/en">
+                      <span>Find Hex from Image</span>
+                    </a>
+                    <span>; </span>
+
+                    <a
+                      href="https://webaim.org/resources/contrastchecker/#:~:text=WCAG%20Level%20AAA%20requires%20a,(typically%2024px)%20or%20larger."
+                    >
+                      <span>Color Contrast Ratio</span>
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">HSL (Hue, Saturation, and Lightness)</span>
+                <span
+                  >: A function that accepts 3 values: a number from 0 to 360
+                  for hue, a percentage from 0 to 100 for saturation, and a
+                  percentage from 0 to 100 for lightness.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">0 is red; 120 green; 240 blue</li>
+                <li class="italic">0-100% saturation (gray-pure color)</li>
+                <li class="italic">0-100% lightness (black, neutral, white)</li>
+                <li class="italic">Ex: hsl(240, 100%, 50%)</li>
+              </ul>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">Hues</span>
+                <span>: Colors</span>
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="I" class="main-section">
+          <header class="topic">I</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Inline Elements</span>
+                <span
+                  >: The opposite of block elements. Elements that are next to
+                  one instead of being stacked like blocks.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">
+                  Labels are inline elements. (You can use display: block to
+                  cancel this.)
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="M" class="main-section">
+          <header class="topic">M</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Media Query</span>
+                <span
+                  >: @media - A rule that allows you to make circumstantial
+                  styling changes.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">
+                  Ex:
+                  <code>@media (max-width: 800px) {
+                    <div class="double-indent">#gallery img {</div>
+                    <div class="triple-indent">width: 50%;</div>
+                    <div class="double-indent">}</div>
+                    <div class="indent">}</div>
+                  </code>
+                </li>
+
+                <li class="italic">
+                  When the width is less than 800px, put the image to 50%
+                </li>
+                <li class="italic">You can also add and to use to rules</li>
+                <li class="italic">
+                  Ex: (min-width 2000px) and (max-width: 800px)
+                </li>
+                <li class="italic">
+                  Sometimes the Media Query will need to be at the end of the
+                  css page.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="O" class="main-section">
+          <header class="topic">O</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Opacity</span>
+                <span
+                  >: How opaque or transparent something is.(0-1.0 or
+                  0%-100%)</span
+                >
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="P" class="main-section">
+          <header class="topic">P</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Primary Colors</span>
+                <span>: Red, Green, or Blue set to 255.</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">Properties</span>
+                <span
+                  >: Parts of an element or class that you can choose to
+                  style.</span
+                >
+              </p>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">Pseudo Element</span>
+                <span
+                  >: Used to applying something to a certain part of an
+                  element.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">
+                  Typically begins with to colons after the element
+                </li>
+                <li class="italic">
+                  Ex: I want the line of the paragraph to be blue
+                </li>
+                <li class="italic">
+                  <code>p::first-line: {
+                    <div class="indent">color: blue;</div>
+                    <div>}</div>
+                  </code>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="R" class="main-section">
+          <header class="topic">R</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">RGB</span>
+                <span
+                  >: A coloring value with 3 augments--(red, green, and blue).
+                  The values for each go up to 255.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">0 for all is black</li>
+                <li class="italic">
+                  Ex: background-color: rgb(255, 0, 255) [this should be a
+                  purple (red and blue)
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="S" class="main-section">
+          <header class="topic">S</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Secondary Colors</span>
+                <span>: 2 Primary Colors set to 255.</span>
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="T" class="main-section">
+          <header class="topic">T</header>
+          <ul>
+            <li>
+              <p class="definition">
+                <span class="term">Tertiary Colors</span>
+                <span>: 1 max (255) 1 half (127)</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="definition">
+                <span class="term">Type Selector</span>
+                <span
+                  >: Selecting an element from the body to style in CSS.</span
+                >
+              </p>
+
+              <ul>
+                <li class="italic">
+                  Ex:
+                  <code>h1 {
+                    <div class="double-indent">Background-color: blue;</div>
+                    <div class="indent">}</div>
+                  </code>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
