@@ -1,0 +1,250 @@
+:root {
+  --orangered: #e84142;
+  --green: #41c39f;
+  --blue: #330e89d4;
+  --dark-blue: rgba(13, 0, 38, 0.791);
+  --grey: rgb(219, 219, 219);
+  --smallfont: 16px;
+  --mediumfont: 20px;  
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Urbanist', sans-serif;
+  font-size: var(--smallfont);
+  margin: 0;
+}
+
+#page {
+  background: linear-gradient(var(--blue), var(--dark-blue));
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  background-color: rgba(28, 0, 79, 0.976);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: 2.5rem;
+}
+
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.header-left p {
+  font-size: var(--smallfont);
+}
+
+#header-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .5rem;
+}
+
+#my {
+  color: var(--orangered);
+}
+
+.header-right a:not(:last-of-type) {
+  color: var(--grey); 
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 1rem; 
+}
+
+#login-nav {
+  background-color: var(--orangered);
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  border-radius: .3rem;
+  padding: .3rem .7rem;
+}
+
+#login-nav:hover, #submit:hover {
+  background-color: var(--green);
+  transition: .4s;
+  cursor: pointer;
+}
+
+.header-right a:not(:last-of-type):hover  {
+  color: var(--green);
+  transition: .4s;
+}
+
+#top {
+  background: 
+    linear-gradient( #1d025d6a, rgba(13, 0, 38, 0.791)), 
+    url('http://www.sfu.ca/~yla312/IAT%20235/P04_week%2013/img/avalanche.jpg');
+  padding: 10rem 5rem 10rem 5rem;
+}
+
+#top h1 {
+  font-size: 7rem;
+  margin: 0;
+  padding-top: 2rem
+}
+
+#top h2 {
+  color: var(--green);
+  font-size: 5rem;
+  margin: 0;
+}
+
+#top p {
+  font-size: 30px;
+}
+
+form {
+  display: flex;
+}
+
+label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+#email, #submit {
+ padding: .8rem;
+ font-size: var(--mediumfont);
+ margin: 0;
+ border: none;
+}
+
+#email {
+  font-family: 'Urbanist', sans-serif;
+  border-radius: .3rem 0 0 .3rem;
+  width: 50rem; 
+}
+
+#submit {
+  color: white;
+  background-color: var(--orangered);
+  border-radius: 0 .3rem .3rem 0;
+  text-align: center;
+  font-family: 'Urbanist', sans-serif;
+}
+
+iframe {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.about-section {
+  display: flex;
+  margin: auto;
+  padding: 2rem;
+}
+
+.about-img {
+  width: auto;
+  height: 35rem;
+  margin-right: 2rem;
+}
+
+.about-section h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.about-section h2 {
+  color: var(--green);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.about-description p {
+  font-size: --mediumfont;
+  text-align: justify;
+  line-height: 1.5rem;
+  min-width: 20.3rem;
+}
+
+@media (min-width: 799px) and (max-width: 1100px){
+  input {
+    max-width: 31rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 350px;
+  }
+  .about-img {
+    width: 350px;
+    height: auto;
+    margin: auto;
+  }
+
+  #top {
+    padding: 4rem 2rem 1rem 2rem;
+  }
+
+  #top h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 1rem
+  }
+
+  #top h2 {
+    color: var(--green);
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  #top p {
+    font-size: 15px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+
+  #email, #submit {
+  padding: .2rem .3rem;
+  font-size: 15px;
+  border-radius: .3rem;
+  }
+  
+  #email {
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+  
+  #submit {
+    width: 7rem;
+  }
+}
