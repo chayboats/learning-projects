@@ -137,13 +137,25 @@ body {
   )
 }
 
-
 .mb1 {
   width: 170px;
   height: 440px;
   margin-left: 240px;
-  background-color: var(--building-color3);
+  background: 
+  repeating-linear-gradient(
+    var(--building-color3),
+    var(--building-color3) 7%,
+    transparent 7%,
+    transparent 17%
+  ),
 
+  repeating-linear-gradient(
+    90deg,
+    var(--building-color3),
+    var(--building-color3) 5%,
+    var(--window-color3) 5%,
+    var(--window-color3) 32%
+  );
 }
 
 .fb1 {
@@ -163,7 +175,6 @@ body {
     var(--window-color1) 10%,
     var(--window-color1) 45%
   )
-
 }
 
 .fb2 {
@@ -230,8 +241,6 @@ body {
   white 5%,
   var(--window-color1) 5%,
   var(--window-color1) 96%
-);
-  
-
+  );
 }
 
