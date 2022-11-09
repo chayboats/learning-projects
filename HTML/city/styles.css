@@ -24,7 +24,7 @@ body {
   ), 
   linear-gradient(
     yellow, orange, rgb(255, 48, 227)
-  )
+  );
 }
 .background-builings, .midground-buildings, .foreground-buildings {
   position: absolute;
@@ -56,18 +56,20 @@ body {
 .bb1c {
   height: 100%;
   width: 100%;
-  background: repeating-linear-gradient(
+  background: 
+  repeating-linear-gradient(
     90deg, var(--building-color3), 
     var(--building-color3) 10%,
     transparent 10%,
     transparent 15%
   ), 
+
   repeating-linear-gradient(
     160deg, var(--building-color2),
     var(--building-color2) 10%,
     var(--window-color3) 10%,
     var(--window-color3) 95%
-  )
+  );
 }
 
 .building-wrap {
@@ -92,7 +94,16 @@ body {
 }
 
 .bb2b {
-  background-color: var(--building-color1);
+  background:
+  repeating-linear-gradient(
+    165deg,
+    white,
+    white .5%,
+    var(--building-color1) .5%,
+    var(--building-color1) 4%,
+    var(--window-color1) 4%,
+    var(--window-color1) 6%
+  );
   height: 100%;
   width: 100%;
 }
@@ -129,12 +140,13 @@ body {
     transparent 15%,
     transparent 30%
   ),
+
   repeating-linear-gradient(
     160deg, white,
     white 10%,
     var(--window-color2) 10%,
     var(--window-color2) 95%
-  )
+  );
 }
 
 .mb1 {
@@ -174,7 +186,7 @@ body {
     var(--building-color1) 10%,
     var(--window-color1) 10%,
     var(--window-color1) 45%
-  )
+  );
 }
 
 .fb2 {
