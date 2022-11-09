@@ -170,14 +170,68 @@ body {
   width: 110px;
   height: 400px;
   background-color: var(--building-color2);
+  background: 
+  repeating-linear-gradient(
+    90deg,
+    var(--building-color2),
+    var(--building-color2) 10%,
+    transparent 10%,
+    transparent 90%
+  ),
+
+  repeating-linear-gradient(
+    var(--building-color2),
+    var(--building-color2) 5%,
+    var(--window-color2) 5%,
+    var(--window-color2) 10%,
+    white 10%,
+    white 11%
+  );
 }
 
 .fb3 {
-  width: 110px;
-  height: 350px;
+  width: 150px;
+  height: 450px;
   margin-right: 130px;
+}
+
+.fb3a {
+  width: 66px;
+  height: 80px;
+  background-color: var(--building-color1);
+  transform: rotate(45deg);
+  top: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.fb3b {
+  width: 100px;
+  height: 40px;
   background-color: var(--building-color1);
 }
 
+.fb3c {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background:
+  repeating-linear-gradient(
+    90deg,
+    var(--building-color1),
+    var(--building-color1) 9%,
+    transparent 9%,
+    transparent 13%
+  ),
 
+  repeating-linear-gradient(
+  175deg,
+  white,
+  white 5%,
+  var(--window-color1) 5%,
+  var(--window-color1) 96%
+);
+  
+
+}
 
