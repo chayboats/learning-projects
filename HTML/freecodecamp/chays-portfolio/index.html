@@ -1,0 +1,263 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles.css"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale, 1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+
+    <title>Chaley's Portfolio</title>
+  </head>
+
+  <body>
+    <header class="border-bottom">
+      <div class="logo-container">
+        <img
+          src="https://drive.google.com/uc?export=view&id=1BNPF4LZMjL9e7LSIn1pxQF1M9PQF255F"
+          alt="CB logo"
+          id="logo"
+        />
+      </div>
+
+      <nav>
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact-me">Contact Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        id="welcome-section"
+        class="border-bottom"
+      >
+        <img
+          src="https://drive.google.com/uc?export=view&id=1sg1xCKg_QTUXJHo6kKZd8RBtKG2qsUsE"
+          alt="Chaley"
+          class="transition"
+        />
+
+        <div id="about-me">
+          <h1>
+            <span>HELLO THERE,</span>
+            <span>MY NAME IS CHALEY!</span>
+          </h1>
+
+          <p>I am an aspiring front-end engineer. I enjoy bringing people's visions to life through design.</p>
+
+          <!-- Create a section to talk a bit about career change. Maybe have a button that can reveal and hide content -->
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="border-bottom"
+      >
+        <h1>PROJECTS</h1>
+
+        <nav class="project-numbers">
+          <a href="#survey">1</a>
+          <a href="#tribute-page">2</a>
+          <a href="#tech-doc">3</a>
+          <a href="#landing-page">4</a>
+        </nav>
+
+        <div class="project-images">
+          <figure
+            id="survey"
+            class="project-tile"
+          >
+            <figcaption class="project-title">Customer Satisfaction Survey</figcaption>
+
+            <a
+              href="https://github.com/chayboats/learning-projects/tree/main/HTML/freecodecamp/customer-satisfaction-survey"
+              target="_blank"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=11JiWyA6rSXq9yUsKuZSziKODeIiP7EHe"
+                alt="Customer Survey"
+                class="transition"
+              />
+            </a>
+          </figure>
+
+          <figure
+            id="tribute-page"
+            class="project-tile"
+          >
+            <figcaption class="project-title">Tribute Page</figcaption>
+
+            <a
+              href="https://github.com/chayboats/learning-projects/tree/main/HTML/freecodecamp/tribute-page"
+              target="_blank"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=1cwst8mHdTb6OoMDhTb66cGiiLnbHI73h"
+                alt="Robin Williams"
+                class="transition"
+              />
+            </a>
+          </figure>
+
+          <figure
+            id="tech-doc"
+            class="project-tile"
+          >
+            <figcaption class="project-title">Technical Documentation</figcaption>
+
+            <a
+              href="https://github.com/chayboats/learning-projects/tree/main/HTML/freecodecamp/css-definitions"
+              target="_blank"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=1L3Ascq5_hHVjFeJ-T2EkFLzgphv_-Qew"
+                alt="CSS Definitions"
+                class="transition"
+              />
+            </a>
+          </figure>
+
+          <figure
+            id="landing-page"
+            class="project-tile"
+          >
+            <figcaption class="project-title">Product Landing Page</figcaption>
+
+            <a
+              href="https://github.com/chayboats/learning-projects/tree/main/HTML/freecodecamp/manage-my-debt"
+              target="_blank"
+            >
+              <img
+                src="https://drive.google.com/uc?export=view&id=14rOyLk-J1VXZ6IW3EKZUzgyQNLIlwyA7"
+                alt="Manage My Debt"
+                class="transition"
+              />
+            </a>
+          </figure>
+        </div>
+      </section>
+
+      <section id="contact-me">
+        <h1>CONTACT ME</h1>
+
+        <form>
+          <div class="name-email">
+            <label
+              for="name"
+              class="sr-only"
+            >
+              Name
+            </label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Name"
+              required=""
+            />
+
+            <label
+              for="email"
+              class="sr-only"
+            >
+              Email
+            </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Email"
+              required=""
+            />
+          </div>
+
+          <label
+            for="subject"
+            class="sr-only"
+          >
+            Subject
+          </label>
+          <input
+            id="subject"
+            type="text"
+            placeholder="Subject"
+            required=""
+          />
+
+          <label
+            for="content"
+            class="sr-only"
+          >
+            Content
+          </label>
+          <textarea
+            id="content"
+            rows="10"
+            required=""
+            placeholder="Message"
+          ></textarea>
+
+          <button
+            type="submit"
+            id="submit"
+            class="transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="social-media">
+      <a
+        href="https://www.linkedin.com/in/chaley-boatmon/"
+        target="_blank"
+      >
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <a
+        href="https://www.instagram.com/chay_boats/"
+        target="_blank"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a
+        href="https://www.facebook.com/chaley.boatmon"
+        target="_blank"
+      >
+        <i class="fab fa-facebook"></i>
+      </a>
+
+      <a
+        href="https://github.com/chayboats"
+        target="_blank"
+        id="profile-link"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+    </footer>
+  </body>
+</html>
