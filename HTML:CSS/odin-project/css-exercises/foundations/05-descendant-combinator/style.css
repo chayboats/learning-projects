@@ -1,0 +1,9 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div.container p.text {
+  color: red;
+  background-color: yellow;
+  text-align: center;
+  font-size: 20px;
+}

@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, figcaption{
+  text-align: center;
+}
+
+h2, h4 {
+  margin-bottom: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}

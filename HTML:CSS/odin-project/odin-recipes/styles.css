@@ -1,0 +1,16 @@
+body {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+img {
+  margin-top: 20px;
+}
+
+.figure {
+  max-width: 300px;
+}
+
+#title {
+  background-color: rgb(184, 219, 229);
+}
