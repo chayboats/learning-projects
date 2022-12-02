@@ -1,3 +1,10 @@
-console.log("Good Morning");
-console.log("Rise & Shine!");
-console.log("Love, Chay"); 
+var line1 = 'I want\n';
+var line2 = 'to eat\n';
+var line3a = '8';
+var line3b = 'of Madison\'s cookies.';
+var fullLine = line1  + line2 + line3a + ' ' + line3b;
+var cookieStart = 20;
+var cookieEaten = 39%5;
+cookieEaten = cookieEaten + cookieEaten;
+var cookieLeft = cookieStart - cookieEaten;
+console.log(cookieLeft);
