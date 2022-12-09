@@ -10,4 +10,4 @@ console.log(tempFahrenheit);
 
 // The message for the day's temperature will be stored in 'tempMessage' and read 'Today's temperature in Lafayette will be "tempFahrenheit" degrees fahrenheit.' 
 //'tempFahrenheit' will be rounded down
-let tempMessage = 'Today\'s temperature in Lafayette will be ' + Math.floor(tempFahrenheit) + ' degrees fahrenheit.';
+let tempMessage = 'Today\'s temperature in Lafayette will be ' + Math.floor(tempFahrenheit) + ' degrees fahrenheit.'; 
