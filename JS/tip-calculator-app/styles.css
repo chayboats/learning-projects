@@ -1,0 +1,27 @@
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bill-amount, #number-of-people {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+}
+
+.left, .right {
+  width: 100%;
+}
+main {
+  margin: auto 10%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
