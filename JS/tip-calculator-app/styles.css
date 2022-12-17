@@ -36,36 +36,17 @@ main {
 }
 
 .left, .right {
-  width: 50%;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 0;
+  width: 50%;
+  padding: 2rem;
 }
 
 #bill input, #person-count input {
   width: 98%;
 }
-
-.right {
-  border-radius: 1.5rem;
-  background-color: hsl(183, 100%, 15%);
-  margin: 1rem;
-  color: white;
-}
-
-.row p {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
-p span:nth-of-type(2) {
-  color: hsl(186, 14%, 43%);
-}
-
-
 
 .percentages {
   display: flex;
@@ -115,16 +96,27 @@ input:focus {
   color: hsl(183, 100%, 15%);
 }
 
+.right {
+  border-radius: 1.5rem;
+  background-color: hsl(183, 100%, 15%);
+  margin: 1rem;
+  color: white;
+}
+
+div span:nth-of-type(2) {
+  color: hsl(186, 14%, 43%);
+}
+
 .dollar-amount {
   display: flex;
   justify-content: space-between;
 }
 
-.dollar-amount p:nth-of-type(2) {
+.dollar-amount div:nth-of-type(2) {
   font-size: 50px;
   color: hsl(172, 67%, 45%);
+  line-height: 3rem;
 }
-
 
 #reset {
   padding: .5rem;
