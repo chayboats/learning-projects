@@ -64,15 +64,26 @@ button {
 }
 
 input {
-  background-color: hsl(189, 41%, 97%);
   color: hsl(183, 100%, 15%);
   border: 2px solid transparent;
+  text-align: right;
 }
 
 input:focus {
   outline: none !important;
   border: 2px solid hsl(172, 67%, 45%) !important;
  }
+
+#bill input {
+  background: url(images/icon-dollar.svg) no-repeat scroll 7px 7px;
+  background-color: hsl(189, 41%, 97%);
+   
+}
+
+#person-count input {
+  background: url(images/icon-person.svg) no-repeat scroll 7px 7px;
+  background-color: hsl(189, 41%, 97%);
+}
 
 
 #tip-button-wrapper input, #tip-button-wrapper button {

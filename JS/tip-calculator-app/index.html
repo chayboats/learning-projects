@@ -20,31 +20,33 @@
   
   <main class="row">
     <div class="left">
-      <section id="bill">
-        <label id="bill-label" for="bill" >Bill</label>
-        <input id="bill-amount" type="number">
-      </section>
-      
-      <section id="select-tip">
-        <p>Select Tip %</p>
-        <div id="tip-button-wrapper">
-          <div class="percentages">
-            <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
+      <form>
+        <section id="bill">
+          <label id="bill-label" for="bill" >Bill</label>
+          <input id="bill-amount" type="number">
+        </section>
+        
+        <section id="select-tip">
+          <p>Select Tip %</p>
+          <div id="tip-button-wrapper">
+            <div class="percentages">
+              <button>5%</button>
+              <button>10%</button>
+              <button>15%</button>
+            </div>
+            <div class="percentages">
+              <button>25%</button>
+              <button>50%</button>
+              <input type="number" placeholder="Custom"/>
+            </div>
           </div>
-          <div class="percentages">
-            <button>25%</button>
-            <button>50%</button>
-            <input type="number" placeholder="Custom"/>
-          </div>
-        </div>
-      </section>
-      
-      <section id="person-count">
-        <label for="number-of-people">Number of people</label>
-        <input id="number-of-people" type="number">
-      </section>
+        </section>
+        
+        <section id="person-count">
+          <label for="number-of-people">Number of people</label>
+          <input id="number-of-people" type="number">
+        </section>
+      </form>
     </div>
     
     <div class="right">
