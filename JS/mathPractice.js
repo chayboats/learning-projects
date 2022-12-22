@@ -49,7 +49,6 @@ buttermilkTablespoons = servingMultiplier( buttermilkTablespoons );
 // Jill will need to convert the ingredients to grams
 
 // 1tbsp = 14.3grams
-// TODO: fix parameters
 const tablespoonsToGrams = ( tablespoons, grams = 14.3 ) => {
   return tablespoons * grams
 }
