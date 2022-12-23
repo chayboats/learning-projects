@@ -103,6 +103,98 @@ const summer = weather.slice(-3, 8);
 // const winter = weather.slice(-8, -3);
 // const summer = weather.slice(-3);
 
+// Functions
+
+// Create a function that greets the neighbor
+
+let neighborMorningGreeting = () => {
+  return 'Good morning, neighbor!'
+};
+
+// When you console log the function, you must add parentheses
+// console.log(greetNeighbor())
+
+// Create a function that tells neighbor good evening
+
+let neighborEveningGreeting = () => {
+  return 'Good evening, neighbor. Thanks for everything!';
+}
+
+// console.log(neighborEveningGreeting())
+
+// Rewrite the functions including a paramater and argument for name in both
+// Replace everythign in the section function with a parameter argument naming task
+
+neighborMorningGreeting = (firstName) => {
+  return 'Good morning' + firstName + '!'
+};
+
+neighborEveningGreeting = (firstName, taskCompleted) => {
+  return 'Good evening, ' + firstName + '. Thanks for ' + taskCompleted + '!'
+};
+
+// console.log(neighborEveningGreeting('Mitchel', 'helping me move all of that furniture'));
+
+//Function Declaration, Function Expressions, and IIFEs
+
+//Function Declaration
+
+// Create a function declaration
+
+function morningGreeting(person) {
+  return 'Good morning ' + person + '!'; 
+}
+
+// Create an anonymous function expression
+const multiply = function(a, b) {
+  return a * b;
+}
+
+// Create a named function expression
+const add = function addition(a, b) {
+  return a + b;
+}
+
+// Create an iife: immediately invoked function expression
+
+const babysitter = (function(babysitter, familyName, when) {
+  return babysitter + ' can babysit for the ' + familyName + 's ' + when + '.'; 
+}('Nya', 'Johnson', 'tonight'))
+
+// console.log(morningGreeting);
+// console.log(morningGreeting('Jill'));
+// console.log(multiply);
+// console.log(multiply(3, 5));
+// console.log(add);
+// console.log(add(3, 5));
+// console.log(babysitter);
+
+
+// Function Scopes - global and local
+
+// Global
+const test1 = 'public';
+// console.log(test1)
+
+// Local
+function holdScope() {
+  const test2 = 'private';
+  return test2;
+}
+// console.log(test2) will show as undefined
+// console.log(holdScope())
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
