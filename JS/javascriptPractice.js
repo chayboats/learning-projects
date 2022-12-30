@@ -137,8 +137,6 @@ neighborEveningGreeting = (firstName, taskCompleted) => {
 
 //Function Declaration, Function Expressions, and IIFEs
 
-//Function Declaration
-
 // Create a function declaration
 
 function morningGreeting(person) {
@@ -184,20 +182,87 @@ function holdScope() {
 // console.log(test2) will show as undefined
 // console.log(holdScope())
 
+// Access a global scope within a local scope
+
+const scope = 'public'
+
+function scopeArray() {
+  const scope = 'private';
+  return [scope, newScope];
+}
+// console.log(scopeArray())
+
+
+// If you do not declare your variable with a keyword, 
+// it is automatically a global variable 
+// EVEN if you put it inside of a function
+
+// function roadTrip() {
+  // const gallons = 12;
+  // const mpg = 34;
+  // return gallons * mpg
+// }
+
+// console.log(roadTrip()) This returns 408
+
+// Move local variables to global scope
 
 
 
+// const gallons = 12;
+// const mpg = 34;
+
+// function roadTrip() {
+  // const gallons = 10;
+  // const mpg = 5;
+  // return gallons * mpg;
+// }
+
+// console.log(roadTrip())
+// This returns 50
+
+// We do not have to create any parameters or accept any arguments because gallons and mpg already exist,
+// The interpreter will first look at the local scope, whatever it has inside itself already
+// If the information is not there, it just has to go outwards to the global scope to get it
+
+const gallons = 12;
+const mpg = 34;
+
+function roadTrip() {
+  return gallons * mpg;
+}
+
+// console.log(roadTrip())
+// This returns 408
+
+// If you assign a value to a variable without using a keyword, it will automatically be placed in the global scope
+// Though you can do this, it is not best practice
+// To show an error any time you do this, you use the use Strict Mode in an iffe
+// This will show an error that food is not defined
+// You will most likely never need to do this
+// (function useStrict() {
+// 'use strict';
+//  food = 'pizza'
+// }())
+
+// Nested functions 
+// Create a function within a function
+
+const person = 'Jill';
+
+function hello() {
+  const greeting = 'Hello ';
+  function fullGreeting() {
+    return greeting + person + '!';
+  }
+  return fullGreeting() + ' Bonjour!';
+}
 
 
+console.log(hello())
 
 
-
-
-
-
-
-
-
+//   console.log(useStrict())
 
 
 
