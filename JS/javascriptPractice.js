@@ -259,11 +259,29 @@ function hello() {
 }
 
 
-console.log(hello())
+// console.log(hello())
 
+// If, If/Else, Else/If
+// You can have the word return multiple times in this function 
+// because the return will only be hit once
 
-//   console.log(useStrict())
+const testScores = [99, 85, 63, 70, 55];
 
+function teacherMessage(grade) {
+  if(grade>89) {
+    return 'Congratulations, you got an A';
+  } else if(grade>79) {
+    return 'Great job, you got a B.';
+  } else if(grade>69) {
+    return 'Not bad, you got a C.';
+  } else if(grade>59) {
+    return 'You passed, you got a D.';
+  } else {
+    return 'You failed, study more next time.';
+  }
+}
+
+console.log(teacherMessage(testScores[4]))
 
 
 
