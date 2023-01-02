@@ -1,7 +1,10 @@
 function getUserChoice(userInput) {
   userInput = userInput.toLowerCase()
   
-  if (userInput === 'bear' || userInput === 'human' || userInput === 'gun') {
+  if (userInput === 'bear' 
+  || userInput === 'human' 
+  || userInput === 'gun') 
+  {
     return userInput
   }
 
@@ -9,11 +12,11 @@ function getUserChoice(userInput) {
 }
 
 function getComputerChoice() {
-  const randomNumber = Math.floor(math.random() *  3)
+  const randomNumber = Math.floor(Math.random() *  3)
   
-  if(randomNumber === 0) {
+  if (randomNumber === 0) {
     return 'bear'
-  } else if(randomNumber === 1) {
+  } else if (randomNumber === 1) {
     return 'human'
   }
 
@@ -21,17 +24,21 @@ function getComputerChoice() {
 }
 
 function determineWinner(userChoice, computerChoice) {
-  if(userChoice === computerChoice) {
+  if (userChoice === computerChoice) {
     return "It's a tie!"
   
-  } else if((userChoice === 'bear' && computerChoice === 'human')
+  } else if ((userChoice === 'bear' && computerChoice === 'human')
   || (userChoice === 'human' && computerChoice === 'gun')
   || (userChoice === 'gun' && computerChoice === 'bear')
   ){
     return 'You win!'
+  } else if ((computerChoice === 'bear' && userChoice === 'human')
+  || (computerChoice === 'human' && userChoice === 'gun')
+  || (computerChoice === 'gun' && userChoice === 'bear')
+  ){
+    return 'Computer wins!'
   }
-
-  return 'Computer wins!'
+  return 'Error'
 }
 
 function playGame() {

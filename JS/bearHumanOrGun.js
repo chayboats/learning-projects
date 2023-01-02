@@ -1,7 +1,10 @@
 function getUserChoice(userInput) {
   userInput = userInput.toLowerCase()
   
-  if(userInput === 'bear' || userInput === 'human' || userInput === 'gun'){
+  if (userInput === 'bear' 
+  || userInput === 'human' 
+  || userInput === 'gun')
+  {
     return userInput
   }
 
@@ -11,7 +14,7 @@ function getUserChoice(userInput) {
 function getComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3) ;
     
-  if(randomNumber === 0) {
+  if (randomNumber === 0) {
       return 'bear'
     } else if(randomNumber === 1) {
       return 'human'
