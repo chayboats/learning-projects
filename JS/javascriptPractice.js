@@ -29,7 +29,22 @@ chaleyBoatmon[ 'children' ] = 0;
 chaleyBoatmon[ 'marital status' ] = 'single';
 chaleyBoatmon[' home owner '] = false;
 
-// Create function to make objects
+// Create function to make an object
+
+function createPizza(size, crust, sauce, numberOfToppings) {
+  this.size = size;
+  this.crust = crust;
+  this.sauce = sauce;
+  this.numberOfToppings = numberOfToppings;
+}
+
+const peterPizza = new createPizza('medium', 'thin', 'originalMarinara', 3);
+const paxtonPizza = new createPizza('large', 'hand-tossed', 'spicy marinara', 2);
+const penelopePizza = new createPizza('small', 'handmade', 'alfredo', 1);
+
+console.log(peterPizza);
+
+// Create arrow function to make objects (Not standard and I need to read more about |arrow functions|)
 const studentProfile = ( firstName, lastName, race, age, publicSchool ) => {
   return { firstName, lastName, race, age, publicSchool }
 };
@@ -281,7 +296,9 @@ function teacherMessage(grade) {
   }
 }
 
-console.log(teacherMessage(testScores[4]))
+//console.log(teacherMessage(testScores[4]))
+
+
 
 
 

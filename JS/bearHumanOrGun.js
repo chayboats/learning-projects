@@ -1,4 +1,5 @@
 function getUserChoice(userInput) {
+  // Turn user input to lower case
   userInput = userInput.toLowerCase()
   
   if (userInput === 'bear' 

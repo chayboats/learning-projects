@@ -51,3 +51,5 @@ function playGame() {
 }
 
 playGame()
+
+//If I try to console.log playGame(), it will say undefined because nothing is being returned
