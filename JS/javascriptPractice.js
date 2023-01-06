@@ -42,7 +42,7 @@ const peterPizza = new createPizza('medium', 'thin', 'originalMarinara', 3);
 const paxtonPizza = new createPizza('large', 'hand-tossed', 'spicy marinara', 2);
 const penelopePizza = new createPizza('small', 'handmade', 'alfredo', 1);
 
-console.log(peterPizza);
+// console.log(peterPizza);
 
 // Create arrow function to make objects (Not standard and I need to read more about |arrow functions|)
 const studentProfile = ( firstName, lastName, race, age, publicSchool ) => {
@@ -296,8 +296,40 @@ function teacherMessage(grade) {
   }
 }
 
-//console.log(teacherMessage(testScores[4]))
+// Switch Statements
 
+let saleCategory = 'Tabletop Decor';
+saleCategory = saleCategory.toLowerCase()
+function weeklySaleAd(saleCategory) {
+  switch(saleCategory) {
+    case 'wall decor':
+    case 'paper studio': 
+      return 'Wall decor and paper studio are 50% off this week!';
+      break;
+    case 'yarn':
+    case 'crafts':
+    case 'furniture':
+      return 'Yarn, crafts and furniture are 30% off this week!';
+      break;
+    case 'christmas':
+    case 'tabletop decor':
+      return 'Christmas and tabletop decor are 50% off this week!';
+      break;
+    default:
+      return 'Check your weekly ad next week for great sales!';
+  }
+}
+// console.log(weeklySaleAd(saleCategory))
+
+// console.log(teacherMessage(testScores[4]))
+
+// Conditional Statements 
+// Make all conditional statements true
+
+console.log(5<7)
+console.log(7 == ('7'))
+console.log(7 != 'seven')
+console.log(false == 0)
 
 
 
