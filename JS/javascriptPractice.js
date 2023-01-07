@@ -326,12 +326,104 @@ function weeklySaleAd(saleCategory) {
 // Conditional Statements 
 // Make all conditional statements true
 
-console.log(5<7)
-console.log(7 == ('7'))
-console.log(7 != 'seven')
-console.log(false == 0)
+// console.log(5 < 7)
+// console.log(7 == ('7'))
+// console.log(7 != 'seven')
+// console.log(false == 0)
+
+// Use && 1 true and 3 falses || 3 true and 1 false
+
+// console.log((2<3) && (4=='4'));
+// console.log((2<3) && (4==='4'));
+// console.log((2<3) && (4<4));
+// console.log((2>3) && (4!='4'));
+
+// console.log((2<3) || (5<3));
+// console.log((1 == true) || (0 === false));
+// console.log((true == 'true') || (true > false));
+// console.log((false === 'false') || (true === 'true'));
+
+// Use 1 if, 2 else ifs, and 1 else
+
+const partyTime = 12;
+
+function partyInvitation(partyTime) {
+  if(partyTime === 9) {
+    return 'Jasmine\'s birthday breakfast will be at 9am!';
+  } else if(partyTime === 11 || partyTime === 12) {
+    return 'Jasmine\'s birthday brunch will be at ' + partyTime + '!'
+  } else if(partyTime === 5) {
+    return 'Jasmine\'s birthday bash will be at 5pm!'
+  } else {
+    return 'Jasmine\'s birthday bash is still TBD.'
+  }
+};
+
+// console.log(partyInvitation(partyTime))
+
+// Switch Statements
+// You must console.log here. You cannot return, because the break after would be unreadable
+let gradeRemark = 'B';
+
+// switch(gradeRemark) {
+  // case 'A':
+   //  console.log('Great job!');
+   //  break;
+  // case 'B':
+   //  console.log('Good job!');    
+   //  break;
+ //  case 'C':
+   //  console.log('Good try.'); 
+ //  default:
+   //  console.log('You\'re grounded.');
+// }
 
 
+// console.log()
+
+// switch statement Pass an expression reguarding a dice roll
+// 6 is best, 1 is worst
+// Create block for any match
+// End with a default
+
+let diceRoll = Math.floor(Math.random() * 7)
+
+// switch(diceRoll) {
+  // case 1:
+   //  console.log('1 point');
+   //  break;
+  // case 2: 
+  //  console.log('2 points');
+  //   break;
+  // case 3:
+   //  console.log('3 points');
+    // break;
+  // case 4: 
+    // console.log('4 points');
+    // break;
+  // case 5:
+    // console.log('5 points');
+    // break;
+ //  case 6:
+    // console.log('6 points');
+    // break;
+  // default:
+    // console.log('NO POINTS')
+// };
+
+// console.log('Your roll: ' + diceRoll)
+
+let score = 1;
+
+while(score < 5) {
+  console.log(score);
+  score++;
+};
+
+let points = 10;
+do {
+  console.log(points++);
+} while(points < 5);
 
 
 // Notes
