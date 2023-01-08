@@ -413,18 +413,71 @@ let diceRoll = Math.floor(Math.random() * 7)
 
 // console.log('Your roll: ' + diceRoll)
 
-let score = 1;
+// let score = 1;
 
-while(score < 5) {
-  console.log(score);
-  score++;
-};
+// while(score < 5) {
+  // console.log(score);
+ //  score++;
+// };
 
-let points = 10;
-do {
-  console.log(points++);
-} while(points < 5);
+// let points = 10;
+// do {
+  // console.log(++points);
+// } while(points < 5);
 
+
+// for(let i = 0; i<10; i++){
+ // console.log('My favorite number is ' + i + '!')
+//}
+
+
+// let disneyPrincesses = ['Mulan', 'Tiana', 'Ariel', 'Jasmine', 'Moana'];
+// let disneyPrincessCount = disneyPrincesses.length
+// for(let i = disneyPrincessCount - 1 ; i >= 0 ; --i) {
+//   console.log('You are princess '+ disneyPrincesses[i] + '!');
+// }
+
+// Create a while loop that runs 5 times
+
+
+
+// while(score < 5){
+//   if(score === 0) {
+//     console.log('The counter has run ' + (score + 1) + ' time.');
+//     score++;
+//   } else {
+//     console.log('The counter has run '+ (score + 1) + ' times.');
+//     score++;
+//   };
+// }
+
+// Create a do/while loop
+// let score = 0;
+
+// do {
+//   console.log('You scored ' + score + ' points.')
+//   score++;
+//   } while(score >=1  && score < 5);
+
+// Create an array and fill it with 5 numbers
+// Loop through the array with a for loop
+// Run each element of the array through 1 if, 2 else/ifs, and 1 else statements
+
+
+let grades = [90, 84, 78, 99, 65];
+for(let a = 0; a < grades.length; a++){
+  if(a < grades.length && grades[a] >= 93) {
+  console.log('Your score was ' + grades[a] + '%. You made an A.');
+  } else if(a < grades.length && grades[a] >= 85 && grades[a]<=92 ){
+    console.log('Your score was ' + grades[a] + '%. You made a B.');
+  } else if(a < grades.length && grades[a] >= 74 && grades[a] <= 84){
+    console.log('Your score was ' + grades[a] + '%. You made a C.');
+  } else if(a < grades.length && grades[a] <= 73) {
+    console.log('Your score was ' + grades[a] + '%. You failed.');
+  } else {
+    console.log('There was an error calculating your grade.');
+  }
+}
 
 // Notes
 
