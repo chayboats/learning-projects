@@ -464,19 +464,26 @@ let diceRoll = Math.floor(Math.random() * 7)
 // Run each element of the array through 1 if, 2 else/ifs, and 1 else statements
 
 
-let grades = [90, 84, 78, 99, 65];
+const grades = [90, 84, 78, 99, 65];
+
 for(let a = 0; a < grades.length; a++){
-  if(a < grades.length && grades[a] >= 93) {
-  console.log('Your score was ' + grades[a] + '%. You made an A.');
-  } else if(a < grades.length && grades[a] >= 85 && grades[a]<=92 ){
-    console.log('Your score was ' + grades[a] + '%. You made a B.');
-  } else if(a < grades.length && grades[a] >= 74 && grades[a] <= 84){
-    console.log('Your score was ' + grades[a] + '%. You made a C.');
-  } else if(a < grades.length && grades[a] <= 73) {
-    console.log('Your score was ' + grades[a] + '%. You failed.');
+  
+  const personalGrade = grades[a];
+  let endMessage;
+  
+  if(personalGrade >= 93) {
+    endMessage = '%. You made an A.';
+  } else if(personalGrade >= 85 && personalGrade <= 92 ){
+    endMessage = '%. You made a B.';
+  } else if(personalGrade >= 74 && personalGrade <= 84){
+    endMessage = '%. You made a C.';
+  } else if(personalGrade <= 73) {
+    endMessage = '%. You failed.';
   } else {
     console.log('There was an error calculating your grade.');
   }
+
+  console.log('Your score was ' + personalGrade + endMessage)
 }
 
 // Notes
