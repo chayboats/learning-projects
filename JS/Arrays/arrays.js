@@ -102,7 +102,20 @@ let alphabeticalSecondGraders = allSecondGraders.sort();
 // The second argument tells which value to cut, 
 // and everything after will also be deleted
 
-console.log(allSecondGraders.slice(2, 7));
+// console.log(allSecondGraders.slice(2, 7));
 
 
+// If the values are negative, you will start counting from the end of the array
+// When counting backwards, you start counting at 1, not 0
+// Because the first number tells where the array will start, 
+// When using negative numbers, you should start with the lowest number (-6 is lower than -2)
 
+// console.log(allSecondGraders.slice(-6, -2))
+
+// The prior console.log should yield ['Layla', 'Mark',  'Mary', 'Mary Beth']
+
+// The slice method can also accept just one argument
+// If you enter just one argument, it will tell the array where to start
+
+console.log(allSecondGraders.slice (-8))
+// The prior console log should start at Heidi, and list all of the other students after
